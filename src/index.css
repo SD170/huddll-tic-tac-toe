@@ -18,4 +18,30 @@ code {
  /* padding: 7px; */
    /* margin: 10px; */
   }
+  .grid {
+    display: table;
+    border-spacing: 5px
+  }
+  .row {
+    display: table-row
+  }
+  .cell {
+    width: 50px;
+    height: 50px;
+    background: grey;
+    display: table-cell;
+  }
+  /* .row div:last-child {
+    background: red
+  } */
+  .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
+.fade{
+  opacity: 10%;
+}
