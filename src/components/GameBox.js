@@ -37,6 +37,7 @@ const GameBox = () => {
                         console.log(boxMatrix[i][j]);
                         let res = boxMatrix[i][j];
                         resetGame();
+                        console.log(boxMatrix);
                         return res;
                     }
                     if((new Set([boxMatrix[i][j],boxMatrix[i+1][j],boxMatrix[i+2][j]])).size === 1 && boxMatrix[i][j] != null &&  typeof(boxMatrix[i+2][j]) !== 'undefined'){
@@ -44,6 +45,7 @@ const GameBox = () => {
                         console.log(boxMatrix[i][j]);
                         let res=boxMatrix[i][j];
                         resetGame();
+                        console.log(boxMatrix);
                         return res;
                     }
                     if((new Set([boxMatrix[i][i],boxMatrix[i+1][i+1],boxMatrix[i+2][i+2]])).size === 1 && boxMatrix[i][i] != null &&  typeof(boxMatrix[i+2][i+2]) !== 'undefined'){
@@ -51,12 +53,14 @@ const GameBox = () => {
                         console.log(boxMatrix[i][j]);
                         let res = boxMatrix[i][i];
                         resetGame();
+                        console.log(boxMatrix);
                         return res;
                     }                    
                     if((new Set([boxMatrix[i+2][i],boxMatrix[i+1][i+1],boxMatrix[i][i+2]])).size === 1 && boxMatrix[i+1][i+1] != null &&  typeof(boxMatrix[i+2][i+2]) !== 'undefined'){
                         console.log(`${boxMatrix[i+1][i+1]} wins 4`);
                         let res = boxMatrix[i+1][i+1];
                         resetGame();
+                        console.log(boxMatrix);
                         return res;
                     }
                    
